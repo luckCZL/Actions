@@ -2,7 +2,7 @@ name: wechat robot push
 on:
   push:
     branches:
-      -master
+      - master
 jobs:
   good-morning:
     runs-on: ubuntu-latest
