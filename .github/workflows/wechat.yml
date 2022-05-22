@@ -4,8 +4,8 @@ on:
     branches:
       - dev
   schedule:
-    - cron: '27 16 * * *'
     - cron: '28 16 * * *'
+    - cron: '29 16 * * *'
 jobs:
   good-morning:
     runs-on: ubuntu-latest
@@ -13,7 +13,7 @@ jobs:
     - name: 企业微信markdown消息发送
       uses: fifsky/wechat-work-action@master
       with:
-        url: ff58a9f4-b903-45da-baaa-4519fabe812f
+        url: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=ff58a9f4-b903-45da-baaa-4519fabe812f
         type: markdown
         content: |
           # Tips
