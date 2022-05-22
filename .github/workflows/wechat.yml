@@ -1,0 +1,14 @@
+name: wechat robot push
+on:
+  push:
+    branches:
+      -master
+jobs:
+  good-morning:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 企业微信markdown消息发送
+      uses: zcong1993/actions-qywx-bot@v1.0.0
+      env:
+        key: ff58a9f4-b903-45da-baaa-4519fabe812f
+        body: hello czl
