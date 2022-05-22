@@ -4,8 +4,8 @@ on:
     branches:
       - dev
   schedule:
-    - cron: '23 16 * * *'
-    - cron: '24 16 * * *'
+    - cron: '27 16 * * *'
+    - cron: '28 16 * * *'
 jobs:
   good-morning:
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@ jobs:
           ## Hello
           > from github action message
           > ^_^
-          - repository: ${{ github.repository }}
-          - committer: ${{ github.actor }}
-          - compare: [view](${{ github.event.compare }})
-          - job status: ${{ job.status }}
+          - repository: 11
+          - committer: 22
+          - compare: 33
+          - job status: 44
